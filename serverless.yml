@@ -1,0 +1,11 @@
+service: line-chat-bot
+provider:
+  name: aws
+  runtime: nodejs18.x
+functions:
+  app:
+    handler: botApp.handler
+    events:
+      - http:
+          path: webhook
+          method: POST

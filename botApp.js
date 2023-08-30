@@ -11,6 +11,7 @@ const lineConfig = {
     channelAccessToken: env.ACCESS_TOKEN,
     channelSecret: env.SECRET_TOKEN
 }
+
 const client = new line.Client(lineConfig);
 
 //request event from line service via webhook.
